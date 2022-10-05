@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "sass": "^1.55.0",
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development --watch",
+    "prod": "webpack --mode prodaction",
+    "style": "sass --watch src/sass/style.scss src/sass/style.css"
+  }
+}
