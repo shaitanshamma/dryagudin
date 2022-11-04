@@ -1,0 +1,27 @@
+.header__wrapper{
+  max-width: 1440px;
+  margin: auto;
+}
+
+.navigation {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid $light-color;
+}
+
+.navigation__link {
+  a {
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: $light-color;
+    &:hover{
+      color: $main-color;
+    }
+  };
+
+}

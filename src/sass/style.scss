@@ -1,4 +1,7 @@
 @import "base/reset";
+@import "abstracts/constants";
 @import "base/base";
 
-@import "abstracts/constants";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/wrapper";

@@ -11,9 +11,11 @@ h3,
 h4,
 h5,
 p,
+ul,
 figure,
 picture {
   margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -46,6 +48,69 @@ html {
 body {
   font-size: 1.6rem;
   font-style: normal;
+  font-family: Roboto, sans-serif;
+  background-color: #F5F5F5;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 5.3rem;
+  font-weight: 700;
+  color: rgb(71, 152, 227);
+}
+
+h3 {
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+#real-psychosomatic .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logos {
+  display: flex;
+}
+
+.logos__img {
+  max-width: 124px;
+  width: 100%;
+  height: auto;
+}
+
+.header__wrapper {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.navigation {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid rgb(130, 130, 130);
+}
+
+.navigation__link a {
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: rgb(130, 130, 130);
+}
+.navigation__link a:hover {
+  color: rgb(71, 152, 227);
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 250px;
 }
 
 /*# sourceMappingURL=style.css.map */
