@@ -24,17 +24,19 @@
     width: 30px;
     height: 30px;
     display: inline-block;
+    margin-right: 10px;
     &_telegram{
-
+      background: url("../img/icons/telegram.png") no-repeat center;
     }
     &_whatsapp{
-
+      background: url("../img/icons/wa.png") no-repeat center;
     }
     &_youtube{
-
+      background: url("../img/icons/youtube.png") no-repeat center;
     }
     &_vk{
-
+      background: url("../img/icons/vk.png") no-repeat center;
+      margin-right: 0;
     }
   }
 }
