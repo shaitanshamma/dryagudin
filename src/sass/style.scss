@@ -1,6 +1,7 @@
 @import "abstracts/constants";
 @import "abstracts/placeholders";
 @import "abstracts/mixins";
+@import "abstracts/columns";
 
 @import "base/reset";
 @import "base/base";
@@ -11,4 +12,12 @@
 @import "layouts/footer";
 @import "layouts/wrapper";
 @import "layouts/real-psyhosomatic";
+@import "layouts/about-me";
+@import "layouts/contacts";
+@import "layouts/map";
+@import "layouts/video-feedbacks";
+@import "layouts/feedbacks";
+@import "layouts/study";
+@import "layouts/schedule";
+@import "layouts/emotions";
 

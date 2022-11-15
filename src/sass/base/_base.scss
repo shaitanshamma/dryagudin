@@ -15,6 +15,12 @@ h1 {
 }
 
 h3 {
-  @include font(3.2rem, 500, 3.8rem);
+  @include font(3.2rem, 700, 3.8rem);
   color: #000000;
+}
+p{
+  @include font(1.6rem, 400, 2.1rem)
+}
+.quote{
+  @include font(1.4rem, 400, 1.7rem, italic)
 }

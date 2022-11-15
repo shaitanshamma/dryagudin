@@ -1,3 +1,16 @@
+#about-me .transformed {
+  transform: rotate(-60deg);
+}
+
+.layout-3-columns {
+  display: flex;
+}
+
+.layout-2-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 *,
 *::before,
 *::after {
@@ -62,10 +75,24 @@ h1 {
 
 h3 {
   font-size: 3.2rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 3.8rem;
   font-style: normal;
   color: #000000;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  font-style: normal;
+}
+
+.quote {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  font-style: italic;
 }
 
 .navigation {
@@ -88,6 +115,16 @@ h3 {
   color: rgb(71, 152, 227);
 }
 
+.headers {
+  padding-top: 52px;
+  padding-bottom: 21px;
+}
+
+.logos {
+  padding-top: 47px;
+  padding-bottom: 17px;
+}
+
 .header__wrapper {
   max-width: 1440px;
   margin: auto;
@@ -108,6 +145,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 150px;
 }
 
 .logos {
@@ -130,6 +168,85 @@ h3 {
   .video_block video {
     width: 20px;
   }
+}
+
+#about-me .wrapper {
+  margin-bottom: 75px;
+}
+
+#about-me .layout-2-columns {
+  position: relative;
+  height: 389px;
+}
+
+#about-me .portrait {
+  width: 389px;
+  height: 389px;
+  clip-path: polygon(0 0, 100% 0, 42% 100%, 0% 100%);
+  background-image: url("../../src/img/about/partrait.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#about-me .description {
+  width: 660px;
+  height: 389px;
+  background-color: #D9D9D9;
+  clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
+  padding-left: 250px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#about-me .transformed {
+  font-size: 8.4rem;
+  font-weight: 500;
+  line-height: 120%;
+  font-style: normal;
+  color: rgb(71, 152, 227);
+  position: absolute;
+  bottom: 29%;
+  left: 133px;
+}
+
+#emotions .text-strong {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.34rem;
+  font-style: normal;
+}
+#emotions .text-margin {
+  margin-bottom: 2rem;
+}
+#emotions .layout-2-columns {
+  margin-top: 54px;
+}
+#emotions .layout-2-columns .column-block {
+  width: 46%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#emotions .layout-2-columns .column-block p {
+  margin-bottom: 20px;
+}
+#emotions .icon {
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#emotions .icon-human {
+  background: url("../../src/img/icons/human.png") no-repeat center;
+  background-size: cover;
+}
+#emotions .icon-brain {
+  background: url("../../src/img/icons/brain.png") no-repeat center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

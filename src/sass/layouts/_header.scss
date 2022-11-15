@@ -1,8 +1,15 @@
+.headers{
+  padding-top: 52px;
+  padding-bottom: 21px;
+}
+.logos{
+  padding-top: 47px;
+  padding-bottom: 17px;
+}
 .header__wrapper {
   max-width: $content-width;
   margin: auto;
 }
-
 .header__nav {
   border-bottom: 2px solid $light-color;
 }

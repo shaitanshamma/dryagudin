@@ -1,0 +1,39 @@
+#about-me .wrapper{
+  margin-bottom: 75px;
+}
+#about-me .layout-2-columns {
+  position: relative;
+  height: 389px;
+}
+
+#about-me .portrait {
+  width: 389px;
+  height: 389px;
+  clip-path: polygon(0 0, 100% 0, 42% 100%, 0% 100%);
+  background-image: url("../../src/img/about/partrait.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#about-me .description {
+  width: 660px;
+  height: 389px;
+  background-color: $main-fill;
+  clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
+  padding-left: 250px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#about-me .transformed{
+  @extend %rotate-angle;
+  @include font(8.4rem, 500, 120%);
+  color: $main-color;
+  position: absolute;
+  bottom: 29%;
+  left: 133px;
+}

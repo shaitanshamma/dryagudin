@@ -1,0 +1,38 @@
+#emotions {
+  .text-strong {
+    @include font(1.8rem, 600, 2.34rem)
+  }
+
+  .text-margin {
+    margin-bottom: 2rem;
+  }
+
+  .layout-2-columns {
+    margin-top: 54px;
+
+    .column-block {
+      width: 46%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      p{
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .icon {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    margin-bottom: 20px;
+    &-human {
+      background: url("../../src/img/icons/human.png") no-repeat center;
+      background-size: cover;
+    }
+    &-brain {
+      background: url("../../src/img/icons/brain.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+}
