@@ -1,0 +1,27 @@
+#real-psychosomatic .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logos {
+  display: flex;
+}
+
+.logos__img {
+  max-width: 124px;
+  width: 100%;
+  height: auto;
+}
+
+.video_block {
+  width: 100%;
+
+  video {
+    width: 100%;
+    @include mobile-big {
+      width: 20px;
+    }
+  }
+}

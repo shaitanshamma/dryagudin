@@ -1,5 +1,5 @@
 .wrapper{
-  max-width: 1440px;
+  max-width: $content-width - 500px;
+  width: 100%;
   margin: auto;
-  padding: 0 250px;
 }

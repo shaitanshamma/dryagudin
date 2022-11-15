@@ -1,37 +1,20 @@
-html{
+html {
   font-size: 10px;
 }
 
-body{
+body {
   font-size: 1.6rem;
   font-style: normal;
   font-family: Roboto, sans-serif;
   background-color: $main-background;
 }
 
-h1{
-  font-size: 4.5rem;
-  line-height: 5.3rem;
-  font-weight: 700;
+h1 {
+  @include font(4.5rem, 700, 5.3rem);
   color: $main-color;
 }
-h3{
-  font-size: 3.2rem;
-  line-height: 3.8rem;
-  font-weight: 500;
-  color: #000000;
-}
-#real-psychosomatic .wrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.logos{
-  display: flex;
-}
-.logos__img{
-  max-width: 124px;
-  width: 100%;
-  height: auto;
+h3 {
+  @include font(3.2rem, 500, 3.8rem);
+  color: #000000;
 }

@@ -54,46 +54,27 @@ body {
 
 h1 {
   font-size: 4.5rem;
-  line-height: 5.3rem;
   font-weight: 700;
+  line-height: 5.3rem;
+  font-style: normal;
   color: rgb(71, 152, 227);
 }
 
 h3 {
   font-size: 3.2rem;
-  line-height: 3.8rem;
   font-weight: 500;
+  line-height: 3.8rem;
+  font-style: normal;
   color: #000000;
 }
 
-#real-psychosomatic .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logos {
-  display: flex;
-}
-
-.logos__img {
-  max-width: 124px;
-  width: 100%;
-  height: auto;
-}
-
-.header__wrapper {
-  max-width: 1440px;
-  margin: auto;
-}
-
 .navigation {
+  margin: 42px auto 20px;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 2px solid rgb(130, 130, 130);
 }
 
 .navigation__link a {
@@ -107,10 +88,48 @@ h3 {
   color: rgb(71, 152, 227);
 }
 
-.wrapper {
+.header__wrapper {
   max-width: 1440px;
   margin: auto;
-  padding: 0 250px;
+}
+
+.header__nav {
+  border-bottom: 2px solid rgb(130, 130, 130);
+}
+
+.wrapper {
+  max-width: 940px;
+  width: 100%;
+  margin: auto;
+}
+
+#real-psychosomatic .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logos {
+  display: flex;
+}
+
+.logos__img {
+  max-width: 124px;
+  width: 100%;
+  height: auto;
+}
+
+.video_block {
+  width: 100%;
+}
+.video_block video {
+  width: 100%;
+}
+@media screen and (max-width: 414px) {
+  .video_block video {
+    width: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
