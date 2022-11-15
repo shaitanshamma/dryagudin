@@ -1,9 +1,11 @@
-#about-me .transformed {
+#study .transformed, #video-feedbacks .transformed, #about-me .transformed {
   transform: rotate(-60deg);
 }
 
 .layout-3-columns {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .layout-2-columns {
@@ -89,9 +91,9 @@ p {
 }
 
 .quote {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.7rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.3rem;
   font-style: italic;
 }
 
@@ -113,6 +115,18 @@ p {
 }
 .navigation__link a:hover {
   color: rgb(71, 152, 227);
+}
+
+.button {
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #0080F7 1.49%, #05396A 101.44%);
+  box-shadow: 0 5px 12px 2px rgba(0, 102, 255, 0.25);
+  border-radius: 5px;
+  color: #F5F5F5;
+  outline: none;
+  border: none;
+  display: inline-block;
 }
 
 .headers {
@@ -196,10 +210,17 @@ p {
   height: 389px;
   background-color: #D9D9D9;
   clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
-  padding-left: 250px;
+  padding-left: 220px;
   position: absolute;
   right: 0;
   top: 0;
+}
+#about-me .description h2 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 120%;
+  font-style: normal;
+  margin-bottom: 17px;
 }
 
 #about-me .transformed {
@@ -213,14 +234,217 @@ p {
   left: 133px;
 }
 
+#about-me .list {
+  margin-bottom: 17px;
+}
+
+#contacts .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contacts .wrapper > * {
+  text-align: center;
+}
+#contacts h4 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 4.2rem;
+  font-style: normal;
+  color: rgb(130, 130, 130);
+  margin-bottom: 16px;
+}
+#contacts p {
+  max-width: 400px;
+  margin: auto auto 14px;
+  color: #333B41;
+}
+#contacts .social_link {
+  display: inline-flex;
+}
+#contacts .icon-social {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+#courses .wrapper {
+  margin-bottom: 68px;
+}
+#courses .block {
+  flex-basis: 31%;
+  position: relative;
+}
+#courses .block .description {
+  padding: 44px 36px 37px 35px;
+  color: #F5F5F5;
+  font-size: 2rem;
+  background: linear-gradient(102.11deg, #4596E0 5.82%, #1F6DB5 85.91%);
+}
+#courses .block-top {
+  width: 296px;
+  height: 296px;
+}
+#courses .block-top_neiro {
+  background: url("../img/courses/neiro.png") no-repeat center;
+}
+#courses .block-top_psycho {
+  background: url("../img/courses/psycho.png") no-repeat center;
+}
+#courses .block-top_study {
+  background: url("../img/courses/online.png") no-repeat center;
+}
+#courses .page-link {
+  width: 20px;
+  height: 19px;
+  background-image: url("../img/icons/link.png");
+  display: inline-block;
+  position: absolute;
+  bottom: 40px;
+  right: 37px;
+}
+
+#video-feedbacks .wrapper {
+  margin-top: 142px;
+  margin-bottom: 52px;
+}
+#video-feedbacks .transformed {
+  font-size: 8.4rem;
+  font-weight: 500;
+  line-height: 120%;
+  font-style: normal;
+  color: rgb(71, 152, 227);
+  position: absolute;
+  bottom: 27%;
+  left: 135px;
+}
+#video-feedbacks .layout-2-columns {
+  position: relative;
+  height: 389px;
+}
+#video-feedbacks .portrait {
+  width: 389px;
+  height: 389px;
+  clip-path: polygon(0 0, 100% 0, 42% 100%, 0% 100%);
+  background-image: url("../../src/img/feedbacks/portrait.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#video-feedbacks .description {
+  width: 660px;
+  height: 389px;
+  background-color: #D9D9D9;
+  clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
+  padding-left: 220px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#video-feedbacks .description p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#video-feedbacks .description .quote {
+  margin-top: 150px;
+}
+
+#study .wrapper {
+  margin-bottom: 52px;
+}
+#study .transformed {
+  font-size: 8.4rem;
+  font-weight: 500;
+  line-height: 120%;
+  font-style: normal;
+  color: rgb(71, 152, 227);
+  position: absolute;
+  bottom: 36%;
+  left: 116px;
+}
+#study .layout-2-columns {
+  position: relative;
+  height: 389px;
+}
+#study .portrait {
+  width: 389px;
+  height: 389px;
+  clip-path: polygon(0 0, 100% 0, 42% 100%, 0% 100%);
+  background-image: url("../../src/img/study/study_group.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#study .description {
+  width: 660px;
+  height: 389px;
+  background-color: #D9D9D9;
+  clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
+  padding-left: 220px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#study .description p {
+  margin-bottom: 10px;
+}
+
+#schedule .wrapper {
+  background: linear-gradient(270.83deg, #206EB6 1.78%, #4596E0 96.03%);
+  padding: 21px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#schedule .schedule-block {
+  display: flex;
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 9px;
+  padding: 12px 20px 7px 20px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+#schedule .layout-2-columns {
+  padding-left: 5px;
+  border-left: 1px solid rgb(71, 152, 227);
+  align-items: center;
+  width: 100%;
+}
+#schedule .layout-3-columns {
+  width: 100%;
+}
+#schedule h5 {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #206EB6;
+}
+#schedule .date {
+  text-align: center;
+  margin-right: 14px;
+}
+
+#emotions .wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
 #emotions .text-strong {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 2.34rem;
   font-style: normal;
+  align-self: flex-start;
 }
 #emotions .text-margin {
   margin-bottom: 2rem;
+  align-self: flex-start;
 }
 #emotions .layout-2-columns {
   margin-top: 54px;
@@ -230,9 +454,17 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
+  border-bottom: 1px dashed #000000;
+  margin-bottom: 43px;
 }
 #emotions .layout-2-columns .column-block p {
   margin-bottom: 20px;
+}
+#emotions .layout-2-columns .column-block .empty {
+  width: 100%;
+  height: 20px;
+  border-right: 1px dashed #000000;
+  border-left: 1px dashed #000000;
 }
 #emotions .icon {
   width: 55px;
@@ -247,6 +479,38 @@ p {
 #emotions .icon-brain {
   background: url("../img/icons/brain.png") no-repeat center;
   background-size: cover;
+}
+#emotions .layout-1-columns {
+  max-width: 455px;
+  border: 1px dashed #000000;
+  margin: auto auto 54px;
+  position: relative;
+  padding: 8px 20px 11px;
+}
+#emotions .layout-1-columns p {
+  text-align: center;
+}
+#emotions .layout-1-columns:before {
+  content: "";
+  width: 107px;
+  height: 105px;
+  display: block;
+  border-left: 1px dashed #000000;
+  border-bottom: 1px dashed #000000;
+  position: absolute;
+  bottom: 50%;
+  left: -107px;
+}
+#emotions .layout-1-columns:after {
+  content: "";
+  width: 107px;
+  height: 105px;
+  display: block;
+  border-right: 1px dashed #000000;
+  border-bottom: 1px dashed #000000;
+  position: absolute;
+  bottom: 50%;
+  right: -107px;
 }
 
 /*# sourceMappingURL=style.css.map */

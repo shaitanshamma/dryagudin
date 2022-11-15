@@ -1,0 +1,37 @@
+#courses {
+  .wrapper {
+    margin-bottom: 68px;
+  }
+  .block {
+    flex-basis: 31%;
+    position: relative;
+    .description {
+      padding: 44px 36px 37px 35px;
+      color: #F5F5F5;
+      font-size: 2rem;
+      background: linear-gradient(102.11deg, #4596E0 5.82%, #1F6DB5 85.91%);
+    }
+  }
+  .block-top{
+    width: 296px;
+    height: 296px;
+    &_neiro{
+      background: url("../img/courses/neiro.png") no-repeat center;
+    }
+    &_psycho{
+      background: url("../img/courses/psycho.png") no-repeat center;
+    }
+    &_study{
+      background: url("../img/courses/online.png") no-repeat center;
+    }
+  }
+  .page-link{
+    width: 20px;
+    height: 19px;
+    background-image: url("../img/icons/link.png");
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+    right: 37px;
+  }
+}
