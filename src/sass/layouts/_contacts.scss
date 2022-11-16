@@ -6,6 +6,8 @@
     & > * {
       text-align: center;
     }
+
+    margin-bottom: 38px;
   }
   h4{
     @include font(3.5rem, 600, 4.2rem);

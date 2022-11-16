@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@300;400;500;700&display=swap"
@@ -181,7 +182,7 @@
                 <p>Мне очень важна обратная связь от учеников и клиентов, поэтому буду рад вашим отзывам.</p>
                 <p>В этом разделе вы найдете отзывы о приемах, методиках, очном и онлайн обучении, а так же отзывы,
                     которые получают мои ученики от своих клиентов.</p>
-                <p>НС отзывами по каждой отдельной услуге, вы можете ознакомиться в соответствующих разделах сайта.</p>
+                <p>С отзывами по каждой отдельной услуге, вы можете ознакомиться в соответствующих разделах сайта.</p>
                 <p class="quote">“Для того, чтобы стать счастливым, достаточно просто раскрыть себя настоящего”
                     Д.Р.Ягудин
                 </p>
@@ -214,23 +215,44 @@
 </section>
 <section id="map">
     <div class="wrapper">
-
+        <div class="map" id="myMap">
+<!--             <div class="hidden"> -->
+<!--                 <p>Москва, улица Юных Ленинцев, дом 25, офис 9.<br> -->
+<!--                     <strong>Если добираетесь своим ходом:</strong> <br> -->
+<!--                     ст. м. «Текстильщики», последний вагон, выход №5. Автобусы, 530, т27 и т38 до остановки «Улица -->
+<!--                     Малышева».<br> -->
+<!--                     <strong>Если добираетесь на машине:</strong> <br> -->
+<!--                     при заезде на территорию спросить у охранника на входе в здание, куда можно припарковать автомобиль. -->
+<!--                 </p> -->
+<!--             </div> -->
+<!--             <div class="info"> -->
+<!--                 <p>Территория баланса</p> -->
+<!--                 <p>г. Москва, ул. Юных Ленинцев, д.25</p> -->
+<!--                 <p>+7-925-221-99-29</p> -->
+<!--                 <p><a href="mailto:info@terrabalans.ru">info@terrabalans.ru</a></p> -->
+<!--             </div> -->
+        </div>
     </div>
 </section>
 <footer class="footer">
     <div class="wrapper">
         <div class="footer layout-3-columns">
-            <div class="footer pfr"></div>
-            <div class="footer y-method"></div>
+            <div class="footer pfr">
+                <img src="./src/img/logo/pfr-unity.png" alt="PF_R unity" class="logos__img">
+            </div>
+            <div class="footer y-method">
+                <img src="./src/img/logo/yagudin-metod.png" alt="Yagudin Metod" class="logos__img">
+            </div>
             <div class="footer description">
                 <p>ИП Ягудин Д.Р.
                 <p>ИНН: 772603582363</p>
                 <p>ОГРНИП: 309774607600510</p>
-                <p>Адрес: 117535, г. Москва, ул. Дорожная 28к1,107</p>
+                <p class="address">Адрес: 117535, г. Москва, <br>ул. Дорожная 28к1,107</p>
             </div>
         </div>
     </div>
 </footer>
 </body>
-<script src="src/index.js"></script>
+<script src="src/js/index.js"></script>
+<script src="src/js/map.js"></script>
 </html>
