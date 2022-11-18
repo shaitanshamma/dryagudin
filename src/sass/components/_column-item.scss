@@ -1,0 +1,28 @@
+.column-item{
+  width: 24%;
+  height: 288px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 16px;
+  border: 1px solid black;
+  border-radius: 18px;
+}
+.column-name{
+  margin-bottom: 10px;
+}
+.column-avatar{
+  width: 33px;
+  height: 34px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.column-text{
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 16;
+  -webkit-box-orient: vertical;
+}

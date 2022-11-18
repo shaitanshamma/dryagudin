@@ -9,11 +9,6 @@
 
     margin-bottom: 38px;
   }
-  h4{
-    @include font(3.5rem, 600, 4.2rem);
-    color: $light-color;
-    margin-bottom: 16px;
-  }
   p{
     max-width: 400px;
     margin: auto auto 14px;

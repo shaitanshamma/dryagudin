@@ -18,6 +18,18 @@ h3 {
   @include font(3.2rem, 700, 3.8rem);
   color: #000000;
 }
+h4{
+  @include font(3.5rem, 600, 4.2rem);
+  color: $light-color;
+  margin-bottom: 16px;
+  text-align: center;
+}
+h5{
+  @include font(1.6rem, 400, 120%);
+  color: black;
+  margin-bottom: 16px;
+  text-align: left;
+}
 p{
   @include font(1.6rem, 400, 2.1rem)
 }

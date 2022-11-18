@@ -83,6 +83,26 @@ h3 {
   color: #000000;
 }
 
+h4 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 4.2rem;
+  font-style: normal;
+  color: rgb(130, 130, 130);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 120%;
+  font-style: normal;
+  color: black;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
 p {
   font-size: 1.6rem;
   font-weight: 400;
@@ -127,6 +147,80 @@ p {
   outline: none;
   border: none;
   display: inline-block;
+  cursor: pointer;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide .video_block {
+  width: 85%;
+}
+
+.swiper-slide.feedbacks {
+  flex-direction: column;
+}
+
+.flexible-column {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexible-column .video_block {
+  width: 22%;
+}
+
+.feedbacksSwiper {
+  margin-bottom: 30px;
+}
+
+.column-item {
+  width: 24%;
+  height: 288px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 16px;
+  border: 1px solid black;
+  border-radius: 18px;
+}
+
+.column-name {
+  margin-bottom: 10px;
+}
+
+.column-avatar {
+  width: 33px;
+  height: 34px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.column-text {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 16;
+  -webkit-box-orient: vertical;
 }
 
 .headers {
@@ -268,14 +362,6 @@ footer .address {
 #contacts .wrapper > * {
   text-align: center;
 }
-#contacts h4 {
-  font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 4.2rem;
-  font-style: normal;
-  color: rgb(130, 130, 130);
-  margin-bottom: 16px;
-}
 #contacts p {
   max-width: 400px;
   margin: auto auto 14px;
@@ -347,7 +433,7 @@ footer .address {
 
 #video-feedbacks .wrapper {
   margin-top: 142px;
-  margin-bottom: 52px;
+  margin-bottom: 56px;
 }
 #video-feedbacks .transformed {
   font-size: 8.4rem;
@@ -362,6 +448,7 @@ footer .address {
 #video-feedbacks .layout-2-columns {
   position: relative;
   height: 389px;
+  margin-bottom: 117px;
 }
 #video-feedbacks .portrait {
   width: 389px;
@@ -390,6 +477,16 @@ footer .address {
 }
 #video-feedbacks .description .quote {
   margin-top: 150px;
+}
+
+#feedbacks .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 140px;
+}
+#feedbacks h4 {
+  margin-bottom: 29px;
 }
 
 #study .wrapper {

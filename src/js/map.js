@@ -26,16 +26,16 @@ ymaps.ready(function () {
 
     myMap.geoObjects.add(myPlacemark)
 
-    myPlacemark.events.add(['click', 'balloonclose'], function (e){
-        if(e.get('type')==='click'){
-            hidden.classList.remove('b-hide')
-            hidden.classList.add('b-show')
-        }
-        else if(e.get('type')==='balloonclose'){
-            hidden.classList.add('b-hide')
-            hidden.classList.remove('b-show')
-        }
-    })
+    // myPlacemark.events.add(['click', 'balloonclose'], function (e){
+    //     if(e.get('type')==='click'){
+    //         hidden.classList.remove('b-hide')
+    //         hidden.classList.add('b-show')
+    //     }
+    //     else if(e.get('type')==='balloonclose'){
+    //         hidden.classList.add('b-hide')
+    //         hidden.classList.remove('b-show')
+    //     }
+    // })
 });
 
 

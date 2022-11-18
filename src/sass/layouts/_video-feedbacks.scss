@@ -1,7 +1,7 @@
 #video-feedbacks{
   .wrapper{
     margin-top: 142px;
-    margin-bottom: 52px;
+    margin-bottom: 56px;
   }
   .transformed {
     @extend %rotate-angle;
@@ -14,6 +14,7 @@
   .layout-2-columns {
     position: relative;
     height: 389px;
+    margin-bottom: 117px;
   }
   .portrait {
     width: 389px;
