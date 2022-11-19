@@ -1,0 +1,33 @@
+#for-whom{
+  .wrapper{
+    margin-bottom: 107px;
+  }
+  p{
+    font-weight:bold;
+    margin-bottom: 36px;
+  }
+  .image{
+    max-width: 525px;
+    width: 48%;
+    height: 299px;
+    background: url("../img/for-whom/bg.png") no-repeat;
+    background-size: cover;
+    margin-right: 48px;
+  }
+  .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 48%;
+    p{
+      margin-bottom: 18px;
+    }
+  }
+  .list_item{
+    margin-left: 20px;
+  }
+  .button{
+    margin-top: 50px;
+  }
+}

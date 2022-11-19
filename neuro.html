@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@300;400;500;700&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="src/sass/style.css">
     <title>Dr.Yagudin</title>
 </head>
@@ -68,6 +69,7 @@
 </section>
 <section id="program">
     <div class="wrapper">
+        <h4>Программа курса</h4>
         <div class="layout-5-columns">
             <div class="block">
                 <div class="block-top block-top_first"></div>
@@ -96,92 +98,200 @@
             </div>
         </div>
         <div class="overlay-block">
-            <h5 class="day"></h5>
+            <h5 class="overlay-block day"></h5>
             <p></p>
         </div>
     </div>
 </section>
-<section id="schedule">
+<section id="for-whom">
     <div class="wrapper">
-        <div class="schedule-block">
-            <h5>Расписание курсов</h5>
-            <div class="schedule layout-3-columns">
-                <div class="layout-2-columns">
-                    <p class="schedule description">Психология<br>тела</p>
-                    <p class="schedule date">3-4<br><span>ДЕК</span></p>
-                </div>
-                <div class="layout-2-columns">
-                    <p class="schedule description">PF_R DUB</p>
-                    <p class="schedule date">10-14<br><span>ДЕК</span></p>
-                </div>
-                <div class="layout-2-columns">
-                    <p class="schedule description">Нейродинамическое<br>восстановление</p>
-                    <p class="schedule date">17-21<br><span>ЯНВ</span></p>
-                </div>
+        <p>Программа включает в себя 5 дней очных практических занятий, с 10:00 до 18:00.</p>
+        <div class="layout-2-columns">
+            <div class="for-whom image"></div>
+            <div class="for-whom description">
+                <p>Для кого подойдет обучение по Нейродинамическому восстановлению:</p>
+                <ul class="for-whom list">
+                    <li class="for-whom list_item">Психологам и психотерапевтам
+                    </li>
+                    <li class="for-whom list_item">Тета-хилерам и мануальным терапевтам
+                    </li>
+                    <li class="for-whom list_item">Кинезиологам</li>
+                    <li class="for-whom list_item">Коучам и мастерам рейки</li>
+                    <li class="for-whom list_item">Массажистам</li>
+                    <li class="for-whom list_item">Всем телесным практикам
+                        и другим помогающим профессиям.
+                    </li>
+                </ul>
+                <button class="button">Расписание</button>
             </div>
         </div>
-        <button class="button">Полное расписание</button>
     </div>
 </section>
-<section id="video-feedbacks">
+<section id="how-it-works">
     <div class="wrapper">
-        <div class="layout-2-columns">
-            <h3 class="transformed">ОТЗЫВЫ</h3>
-            <div class="feedbacks portrait"></div>
-            <div class="feedbacks description">
-                <p>Мне очень важна обратная связь от учеников и клиентов, поэтому буду рад вашим отзывам.</p>
-                <p>В этом разделе вы найдете отзывы о приемах, методиках, очном и онлайн обучении, а так же отзывы,
-                    которые получают мои ученики от своих клиентов.</p>
-                <p>С отзывами по каждой отдельной услуге, вы можете ознакомиться в соответствующих разделах сайта.</p>
-                <p class="quote">“Для того, чтобы стать счастливым, достаточно просто раскрыть себя настоящего”
-                    Д.Р.Ягудин
-                </p>
+        <h4>Как это работает</h4>
+        <div class="swiper videoSwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="video_block">
+                        <video src="" controls poster="" playsinline></video>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="video_block">
+                        <video src="" controls poster="" playsinline></video>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="video_block">
+                        <video src="" controls poster="" playsinline></video>
+                    </div>
+                </div>
             </div>
+            <!-- If we need pagination -->
+            <!--             <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!--             <div class="swiper-scrollbar"></div> -->
         </div>
-        <!-- свайпер -->
     </div>
 </section>
 <section id="feedbacks">
     <div class="wrapper">
-        <h4>Отзыв о курсах</h4>
-        <!-- свайпер -->
-        <button class="button">Оставить отзыв</button>
-    </div>
-</section>
-<section id="contacts">
-    <div class="wrapper">
-        <h4>Контакты</h4>
-        <p>г. Москва, ул. Юных ленинцев д.25, офис 9
-            “Территория баланса”</p>
-        <p>+7(925) 221-99-29</p>
-        <p><a href="mailto:aaa">info@terrabalans.ru</a></p>
-        <div class="social_link">
-            <span class="icon-social icon-social_telegram"></span>
-            <span class="icon-social icon-social_whatsapp"></span>
-            <span class="icon-social icon-social_youtube"></span>
-            <span class="icon-social icon-social_vk"></span>
+        <h4>Отзывы</h4>
+        <div class="swiper feedbacksSwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide feedbacks">
+                    <div class="flexible-column">
+                        <div class="feedback column-item">
+                            <img src="src/img/icons/user_icon.png" alt="default img" class="column-avatar">
+                            <h5 class="column-name">Имя<br>Фамилия</h5>
+                            <p class="column-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                                atque corporis cumque dolore doloremque doloribus eaque error expedita explicabo impedit
+                                ipsam itaque laboriosam, maiores molestias natus nesciunt nostrum numquam perferendis
+                                placeat quisquam repellat tempore ullam voluptates. Atque earum maxime saepe.</p>
+                        </div>
+                        <div class="feedback column-item">
+                            <img src="src/img/icons/user_icon.png" alt="default img" class="column-avatar">
+                            <h5 class="column-name">Имя<br>Фамилия</h5>
+                            <p class="column-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                                atque corporis cumque dolore doloremque doloribus eaque error expedita explicabo impedit
+                                ipsam itaque laboriosam, maiores molestias natus nesciunt nostrum numquam perferendis
+                                placeat quisquam repellat tempore ullam voluptates. Atque earum maxime saepe.</p>
+                        </div>
+                        <div class="feedback column-item">
+                            <img src="src/img/icons/user_icon.png" alt="default img" class="column-avatar">
+                            <h5 class="column-name">Имя<br>Фамилия</h5>
+                            <p class="column-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                                atque corporis cumque dolore doloremque doloribus eaque error expedita explicabo impedit
+                                ipsam itaque laboriosam, maiores molestias natus nesciunt nostrum numquam perferendis
+                                placeat quisquam repellat tempore ullam voluptates. Atque earum maxime saepe.</p>
+                        </div>
+                        <div class="feedback column-item">
+                            <img src="src/img/icons/user_icon.png" alt="default img" class="column-avatar">
+                            <h5 class="column-name">Имя<br>Фамилия</h5>
+                            <p class="column-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                                atque corporis cumque dolore doloremque doloribus eaque error expedita explicabo impedit
+                                ipsam itaque laboriosam, maiores molestias natus nesciunt nostrum numquam perferendis
+                                placeat quisquam repellat tempore ullam voluptates. Atque earum maxime saepe.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide feedbacks">
+                    <div class="flexible-column">
+                        <div class="feedback column-item">
+                            <img src="" alt="default img" class="avatar">
+                            <h5 class="full-name">Имя Фамилия</h5>
+                            <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                                atque corporis cumque dolore doloremque doloribus eaque error expedita explicabo impedit
+                                ipsam itaque laboriosam, maiores molestias natus nesciunt nostrum numquam perferendis
+                                placeat quisquam repellat tempore ullam voluptates. Atque earum maxime saepe.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide feedbacks">
+                    <div class="flexible-column">
+                        <div class="video_block">
+                            <video src="" controls poster="" playsinline></video>
+                        </div>
+                        <div class="video_block">
+                            <video src="" controls poster="" playsinline></video>
+                        </div>
+                        <div class="video_block">
+                            <video src="" controls poster="" playsinline></video>
+                        </div>
+                        <div class="video_block">
+                            <video src="" controls poster="" playsinline></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide feedbacks">
+                    <div class="flexible-column">
+                        <div class="video_block">
+                            <video src="" controls poster="" playsinline></video>
+                        </div>
+                        <div class="video_block">
+                            <video src="" controls poster="" playsinline></video>
+                        </div>
+                        <div class="video_block">
+                            <video src="" controls poster="" playsinline></video>
+                        </div>
+                        <div class="video_block">
+                            <video src="" controls poster="" playsinline></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <!--             <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!--             <div class="swiper-scrollbar"></div> -->
         </div>
     </div>
 </section>
-<section id="map">
+<section id="documents">
     <div class="wrapper">
-        <div class="map" id="myMap">
-            <!--             <div class="hidden"> -->
-            <!--                 <p>Москва, улица Юных Ленинцев, дом 25, офис 9.<br> -->
-            <!--                     <strong>Если добираетесь своим ходом:</strong> <br> -->
-            <!--                     ст. м. «Текстильщики», последний вагон, выход №5. Автобусы, 530, т27 и т38 до остановки «Улица -->
-            <!--                     Малышева».<br> -->
-            <!--                     <strong>Если добираетесь на машине:</strong> <br> -->
-            <!--                     при заезде на территорию спросить у охранника на входе в здание, куда можно припарковать автомобиль. -->
-            <!--                 </p> -->
-            <!--             </div> -->
-            <!--             <div class="info"> -->
-            <!--                 <p>Территория баланса</p> -->
-            <!--                 <p>г. Москва, ул. Юных Ленинцев, д.25</p> -->
-            <!--                 <p>+7-925-221-99-29</p> -->
-            <!--                 <p><a href="mailto:info@terrabalans.ru">info@terrabalans.ru</a></p> -->
-            <!--             </div> -->
+        <h4>Документы и сертификаты</h4>
+        <div class="layout-2-columns">
+            <div class="documents description">
+                <p>После прохождения курса и успешной сдачи практического зачета, вы получаете сертификат и
+                    удостоверение о повышении квалификации* от университета МУПИ по Нейродинамическому
+                    восстановлению.</p>
+                <p class="quote">*Выдача удостоверения возможна при наличии любого другого высшего или
+                    средне-специального образования
+                </p>
+            </div>
+            <div class="documents image">
+                <img src="src/img/documents/doc-1.png" alt="doc-1">
+                <img src="src/img/documents/doc-2.png" alt="doc-2">
+            </div>
         </div>
+    </div>
+</section>
+<section id="price">
+    <div class="wrapper">
+        <h4>Стоимость</h4>
+        <button class="button">ЗАПИСАТЬСЯ НА КУРС</button>
+    </div>
+</section>
+<section id="faq">
+    <div class="wrapper">
+        <h4>Остались вопросы?</h4>
+        <h5>напишите нам</h5>
+        <button class="button">НАПИСАТЬ В WHATSAPP</button>
     </div>
 </section>
 <footer class="footer">
@@ -204,5 +314,6 @@
 </footer>
 </body>
 <script src="src/js/index.js"></script>
-<script src="src/js/map.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="src/js/swiper.js"></script>
 </html>

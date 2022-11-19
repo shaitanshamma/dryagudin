@@ -644,48 +644,140 @@ footer .address {
   right: -107px;
 }
 
+#program h4 {
+  margin-bottom: 85px;
+}
 #program .layout-5-columns .block {
   flex-basis: 18%;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
 }
 #program .layout-5-columns .block .description {
-  padding: 44px 36px 37px 35px;
+  padding: 42px 22px 22px;
   color: #F5F5F5;
   font-size: 2rem;
   background: linear-gradient(102.11deg, #4596E0 5.82%, #1F6DB5 85.91%);
+  width: 100%;
 }
 #program .layout-5-columns .block-top {
   width: 175px;
   height: 175px;
 }
 #program .layout-5-columns .block-top_first {
-  background: url("../img/courses/neiro.png") no-repeat center;
+  background: url("../img/program/day-1.png") no-repeat center;
 }
 #program .layout-5-columns .block-top_second {
-  background: url("../img/courses/psycho.png") no-repeat center;
+  background: url("../img/program/day-2.png") no-repeat center;
 }
 #program .layout-5-columns .block-top_third {
-  background: url("../img/courses/online.png") no-repeat center;
+  background: url("../img/program/day-3.png") no-repeat center;
 }
 #program .layout-5-columns .block-top_fourth {
-  background: url("../img/courses/psycho.png") no-repeat center;
+  background: url("../img/program/day-4.png") no-repeat center;
 }
 #program .layout-5-columns .block-top_fifth {
-  background: url("../img/courses/online.png") no-repeat center;
+  background: url("../img/program/day-5.png") no-repeat center;
 }
 #program .layout-5-columns .page-link {
-  width: 20px;
-  height: 19px;
-  background-image: url("../img/icons/link.png");
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icons/icon_arrow.svg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 40px;
-  right: 37px;
+  bottom: 22px;
+  right: 22px;
 }
 #program .overlay-block {
   width: 100%;
   height: auto;
   padding: 22px;
+  background: #EAF1F6;
+  margin-bottom: 36px;
+}
+
+#for-whom .wrapper {
+  margin-bottom: 107px;
+}
+#for-whom p {
+  font-weight: bold;
+  margin-bottom: 36px;
+}
+#for-whom .image {
+  max-width: 525px;
+  width: 48%;
+  height: 299px;
+  background: url("../img/for-whom/bg.png") no-repeat;
+  background-size: cover;
+  margin-right: 48px;
+}
+#for-whom .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 48%;
+}
+#for-whom .description p {
+  margin-bottom: 18px;
+}
+#for-whom .list_item {
+  margin-left: 20px;
+}
+#for-whom .button {
+  margin-top: 50px;
+}
+
+#how-it-works .wrapper {
+  margin-bottom: 107px;
+}
+#how-it-works h4 {
+  margin-bottom: 55px;
+}
+
+#documents .wrapper {
+  margin-bottom: 150px;
+}
+#documents h4 {
+  margin-bottom: 58px;
+}
+#documents .layout-2-columns {
+  background: #EAF1F6;
+  padding: 22px;
+}
+#documents .description {
+  width: 298px;
+  margin-right: 20px;
+}
+#documents .quote {
+  margin-top: 100px;
+}
+#documents .image {
+  display: flex;
+}
+
+#faq .wrapper {
+  margin-top: 150px;
+  margin-bottom: 126px;
+}
+#faq h4 {
+  margin-bottom: 0;
+}
+#faq h5 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  font-style: normal;
+  color: rgb(130, 130, 130);
+  text-align: center;
+}
+#faq .button {
+  background: linear-gradient(113.96deg, #00F736 1.49%, #1F6A05 101.44%);
+  box-shadow: 0 5px 12px 2px rgba(0, 102, 255, 0.25);
 }
 
 /*# sourceMappingURL=style.css.map */

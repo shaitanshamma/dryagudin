@@ -1,47 +1,59 @@
 #program {
+  h4{
+    margin-bottom: 85px;
+  }
   .layout-5-columns {
     .block {
       flex-basis: 18%;
       position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      cursor: pointer;
       .description {
-        padding: 44px 36px 37px 35px;
+        padding: 42px 22px 22px;
         color: #F5F5F5;
         font-size: 2rem;
         background: linear-gradient(102.11deg, #4596E0 5.82%, #1F6DB5 85.91%);
+        width: 100%;
       }
     }
     .block-top{
       width: 175px;
       height: 175px;
       &_first{
-        background: url("../img/courses/neiro.png") no-repeat center;
+        background: url("../img/program/day-1.png") no-repeat center;
       }
       &_second{
-        background: url("../img/courses/psycho.png") no-repeat center;
+        background: url("../img/program/day-2.png") no-repeat center;
       }
       &_third{
-        background: url("../img/courses/online.png") no-repeat center;
+        background: url("../img/program/day-3.png") no-repeat center;
       }
       &_fourth{
-        background: url("../img/courses/psycho.png") no-repeat center;
+        background: url("../img/program/day-4.png") no-repeat center;
       }
       &_fifth{
-        background: url("../img/courses/online.png") no-repeat center;
+        background: url("../img/program/day-5.png") no-repeat center;
       }
     }
     .page-link{
-      width: 20px;
-      height: 19px;
-      background-image: url("../img/icons/link.png");
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/icons/icon_arrow.svg");
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
       display: inline-block;
       position: absolute;
-      bottom: 40px;
-      right: 37px;
+      bottom: 22px;
+      right: 22px;
     }
   }
   .overlay-block{
     width: 100%;
     height: auto;
     padding: 22px;
+    background: $light-fill;
+    margin-bottom: 36px;
   }
 }

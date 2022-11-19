@@ -1,0 +1,18 @@
+#faq {
+  .wrapper{
+    margin-top: 150px;
+    margin-bottom: 126px;
+  }
+  h4{
+    margin-bottom: 0;
+  }
+  h5 {
+    @include font(3rem, 400, 3.6rem);
+    color: $light-color;
+    text-align: center;
+  }
+  .button{
+    background: linear-gradient(113.96deg, #00F736 1.49%, #1F6A05 101.44%);
+    box-shadow: 0 5px 12px 2px rgba(0, 102, 255, 0.25);
+  }
+}
