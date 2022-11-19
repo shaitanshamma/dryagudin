@@ -1,4 +1,4 @@
-#study .transformed, #video-feedbacks .transformed, #about-me .transformed {
+.transformed-block .transformed {
   transform: rotate(-60deg);
 }
 
@@ -9,6 +9,11 @@
 }
 
 .layout-2-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.layout-5-columns {
   display: flex;
   justify-content: space-between;
 }
@@ -223,6 +228,43 @@ p {
   -webkit-box-orient: vertical;
 }
 
+.transformed-block .transformed {
+  font-size: 8.4rem;
+  font-weight: 500;
+  line-height: 120%;
+  font-style: normal;
+  color: rgb(71, 152, 227);
+  position: absolute;
+}
+.transformed-block .portrait {
+  width: 389px;
+  height: 389px;
+  clip-path: polygon(0 0, 100% 0, 42% 100%, 0% 100%);
+  background-position: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.transformed-block .description {
+  width: 660px;
+  height: 389px;
+  background-color: #D9D9D9;
+  clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
+  padding-left: 220px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.transformed-block .description p {
+  margin-bottom: 10px;
+}
+
+.transformed-block.layout-2-columns {
+  position: relative;
+  height: 389px;
+}
+
 .headers {
   padding-top: 52px;
   padding-bottom: 21px;
@@ -308,27 +350,16 @@ footer .address {
   height: 389px;
 }
 
-#about-me .portrait {
-  width: 389px;
-  height: 389px;
-  clip-path: polygon(0 0, 100% 0, 42% 100%, 0% 100%);
-  background-image: url("../../src/img/about/partrait.png");
-  background-position: top;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0;
+#about-me .list {
+  margin-bottom: 17px;
 }
 
-#about-me .description {
-  width: 660px;
-  height: 389px;
-  background-color: #D9D9D9;
-  clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
-  padding-left: 220px;
-  position: absolute;
-  right: 0;
-  top: 0;
+#about-me .transformed {
+  bottom: 29%;
+  left: 133px;
+}
+#about-me .portrait {
+  background-image: url("../../src/img/about/partrait.png");
 }
 #about-me .description h2 {
   font-size: 4.8rem;
@@ -338,19 +369,37 @@ footer .address {
   margin-bottom: 17px;
 }
 
-#about-me .transformed {
-  font-size: 8.4rem;
-  font-weight: 500;
+#about-course .transformed {
+  bottom: 27%;
+  left: 144px;
+}
+#about-course .layout-2-columns {
+  margin-bottom: 117px;
+}
+#about-course .portrait {
+  background-image: url("../../src/img/courses/about-course.png");
+}
+#about-course .description h2 {
+  font-size: 4.8rem;
+  font-weight: 600;
   line-height: 120%;
   font-style: normal;
-  color: rgb(71, 152, 227);
-  position: absolute;
-  bottom: 29%;
-  left: 133px;
+  margin-bottom: 5px;
 }
-
-#about-me .list {
-  margin-bottom: 17px;
+#about-course .description p {
+  margin-bottom: 0;
+  line-height: 1.8rem;
+}
+#about-course .description p span {
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+#about-course .list {
+  margin-top: 0;
+}
+#about-course .list_item {
+  margin-left: 20px;
 }
 
 #contacts .wrapper {
@@ -436,40 +485,14 @@ footer .address {
   margin-bottom: 56px;
 }
 #video-feedbacks .transformed {
-  font-size: 8.4rem;
-  font-weight: 500;
-  line-height: 120%;
-  font-style: normal;
-  color: rgb(71, 152, 227);
-  position: absolute;
   bottom: 27%;
   left: 135px;
 }
 #video-feedbacks .layout-2-columns {
-  position: relative;
-  height: 389px;
   margin-bottom: 117px;
 }
 #video-feedbacks .portrait {
-  width: 389px;
-  height: 389px;
-  clip-path: polygon(0 0, 100% 0, 42% 100%, 0% 100%);
   background-image: url("../../src/img/feedbacks/portrait.png");
-  background-position: top;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-#video-feedbacks .description {
-  width: 660px;
-  height: 389px;
-  background-color: #D9D9D9;
-  clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
-  padding-left: 220px;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 #video-feedbacks .description p {
   margin-top: 10px;
@@ -493,42 +516,11 @@ footer .address {
   margin-bottom: 52px;
 }
 #study .transformed {
-  font-size: 8.4rem;
-  font-weight: 500;
-  line-height: 120%;
-  font-style: normal;
-  color: rgb(71, 152, 227);
-  position: absolute;
   bottom: 36%;
   left: 116px;
 }
-#study .layout-2-columns {
-  position: relative;
-  height: 389px;
-}
 #study .portrait {
-  width: 389px;
-  height: 389px;
-  clip-path: polygon(0 0, 100% 0, 42% 100%, 0% 100%);
   background-image: url("../../src/img/study/study_group.png");
-  background-position: top;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-#study .description {
-  width: 660px;
-  height: 389px;
-  background-color: #D9D9D9;
-  clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
-  padding-left: 220px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-#study .description p {
-  margin-bottom: 10px;
 }
 
 #schedule .wrapper {
@@ -650,6 +642,50 @@ footer .address {
   position: absolute;
   bottom: 50%;
   right: -107px;
+}
+
+#program .layout-5-columns .block {
+  flex-basis: 18%;
+  position: relative;
+}
+#program .layout-5-columns .block .description {
+  padding: 44px 36px 37px 35px;
+  color: #F5F5F5;
+  font-size: 2rem;
+  background: linear-gradient(102.11deg, #4596E0 5.82%, #1F6DB5 85.91%);
+}
+#program .layout-5-columns .block-top {
+  width: 175px;
+  height: 175px;
+}
+#program .layout-5-columns .block-top_first {
+  background: url("../img/courses/neiro.png") no-repeat center;
+}
+#program .layout-5-columns .block-top_second {
+  background: url("../img/courses/psycho.png") no-repeat center;
+}
+#program .layout-5-columns .block-top_third {
+  background: url("../img/courses/online.png") no-repeat center;
+}
+#program .layout-5-columns .block-top_fourth {
+  background: url("../img/courses/psycho.png") no-repeat center;
+}
+#program .layout-5-columns .block-top_fifth {
+  background: url("../img/courses/online.png") no-repeat center;
+}
+#program .layout-5-columns .page-link {
+  width: 20px;
+  height: 19px;
+  background-image: url("../img/icons/link.png");
+  display: inline-block;
+  position: absolute;
+  bottom: 40px;
+  right: 37px;
+}
+#program .overlay-block {
+  width: 100%;
+  height: auto;
+  padding: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */

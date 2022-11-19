@@ -1,0 +1,33 @@
+#about-course{
+  .transformed {
+    bottom: 27%;
+    left: 144px;
+  }
+  .layout-2-columns {
+    margin-bottom: 117px;
+  }
+  .portrait {
+    background-image: url("../../src/img/courses/about-course.png");
+  }
+  .description {
+    h2 {
+      @include font($size: 4.8rem, $height: 120%, $weight: 600);
+      margin-bottom: 5px;
+    }
+    p{
+      margin-bottom: 0;
+      line-height: 1.8rem;
+      span{
+        font-weight: bold;
+        margin-top: 10px;
+        display: inline-block;
+      }
+    }
+  }
+  .list{
+    margin-top: 0;
+  }
+  .list_item{
+    margin-left: 20px;
+  }
+}

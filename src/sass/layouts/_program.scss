@@ -1,0 +1,47 @@
+#program {
+  .layout-5-columns {
+    .block {
+      flex-basis: 18%;
+      position: relative;
+      .description {
+        padding: 44px 36px 37px 35px;
+        color: #F5F5F5;
+        font-size: 2rem;
+        background: linear-gradient(102.11deg, #4596E0 5.82%, #1F6DB5 85.91%);
+      }
+    }
+    .block-top{
+      width: 175px;
+      height: 175px;
+      &_first{
+        background: url("../img/courses/neiro.png") no-repeat center;
+      }
+      &_second{
+        background: url("../img/courses/psycho.png") no-repeat center;
+      }
+      &_third{
+        background: url("../img/courses/online.png") no-repeat center;
+      }
+      &_fourth{
+        background: url("../img/courses/psycho.png") no-repeat center;
+      }
+      &_fifth{
+        background: url("../img/courses/online.png") no-repeat center;
+      }
+    }
+    .page-link{
+      width: 20px;
+      height: 19px;
+      background-image: url("../img/icons/link.png");
+      display: inline-block;
+      position: absolute;
+      bottom: 40px;
+      right: 37px;
+    }
+  }
+  .overlay-block{
+    width: 100%;
+    height: auto;
+    padding: 22px;
+  }
+}

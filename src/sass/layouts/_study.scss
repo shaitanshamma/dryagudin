@@ -3,39 +3,10 @@
     margin-bottom: 52px;
   }
   .transformed {
-    @extend %rotate-angle;
-    @include font(8.4rem, 500, 120%);
-    color: $main-color;
-    position: absolute;
     bottom: 36%;
     left: 116px;
   }
-  .layout-2-columns {
-    position: relative;
-    height: 389px;
-  }
   .portrait {
-    width: 389px;
-    height: 389px;
-    clip-path: polygon(0 0, 100% 0, 42% 100%, 0% 100%);
     background-image: url("../../src/img/study/study_group.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  .description {
-    width: 660px;
-    height: 389px;
-    background-color: $main-fill;
-    clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
-    padding-left: 220px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    p{
-      margin-bottom: 10px;
-    }
   }
 }
