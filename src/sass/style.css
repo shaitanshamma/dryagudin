@@ -22,6 +22,15 @@
   justify-content: space-between;
 }
 
+.layout-6-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.layout-6-columns > * {
+  width: 16%;
+}
+
 *,
 *::before,
 *::after {
@@ -834,6 +843,18 @@ footer .address {
 }
 #body-remembers .layout-2-columns_vertical img {
   margin-bottom: 7px;
+}
+
+#whats-happen .wrapper {
+  margin-bottom: 116px;
+}
+#whats-happen h4 {
+  margin-bottom: 53px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#whats-happen .list {
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

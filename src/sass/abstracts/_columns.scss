@@ -15,3 +15,12 @@
   display: flex;
   justify-content: space-between;
 }
+.layout-6-columns{
+  display: flex;
+  justify-content: space-between;
+  &>*{
+    width: 16%;
+  }
+
+  margin-bottom: 16px;
+}
