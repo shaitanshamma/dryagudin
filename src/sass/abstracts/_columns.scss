@@ -6,6 +6,10 @@
 .layout-2-columns{
   display: flex;
   justify-content: space-between;
+  &_vertical{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .layout-5-columns{
   display: flex;

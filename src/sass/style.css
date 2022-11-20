@@ -12,6 +12,10 @@
   display: flex;
   justify-content: space-between;
 }
+.layout-2-columns_vertical {
+  flex-direction: column;
+  align-items: center;
+}
 
 .layout-5-columns {
   display: flex;
@@ -153,6 +157,10 @@ p {
   border: none;
   display: inline-block;
   cursor: pointer;
+}
+.button_green {
+  background: linear-gradient(113.96deg, #00F736 1.49%, #1F6A05 101.44%);
+  box-shadow: 0 5px 12px 2px rgba(0, 102, 255, 0.25);
 }
 
 .swiper {
@@ -775,9 +783,57 @@ footer .address {
   color: rgb(130, 130, 130);
   text-align: center;
 }
-#faq .button {
-  background: linear-gradient(113.96deg, #00F736 1.49%, #1F6A05 101.44%);
-  box-shadow: 0 5px 12px 2px rgba(0, 102, 255, 0.25);
+
+#pf_r-dub .wrapper {
+  margin-bottom: 150px;
+}
+#pf_r-dub h1 span {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  font-style: normal;
+}
+
+#pf_r-dub-about-course .layout-2-columns {
+  margin-bottom: 117px;
+}
+#pf_r-dub-about-course .transformed {
+  bottom: 27%;
+  left: 144px;
+}
+#pf_r-dub-about-course .portrait {
+  background-image: url("../../src/img/about/partrait.png");
+}
+#pf_r-dub-about-course .description h2 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 120%;
+  font-style: normal;
+  margin-bottom: 17px;
+}
+
+#body-remembers .wrapper {
+  margin-bottom: 116px;
+}
+#body-remembers h4 {
+  margin-bottom: 42px;
+}
+#body-remembers .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#body-remembers .description p {
+  max-width: 700px;
+  width: 100%;
+}
+#body-remembers .layout-2-columns_vertical {
+  flex-grow: 2;
+  max-width: 198px;
+  width: 100%;
+}
+#body-remembers .layout-2-columns_vertical img {
+  margin-bottom: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */

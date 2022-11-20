@@ -1,0 +1,26 @@
+#body-remembers {
+  .wrapper{
+    margin-bottom: 116px;
+  }
+  h4{
+    margin-bottom: 42px;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p {
+      max-width: 700px;
+      width: 100%;
+    }
+  }
+
+  .layout-2-columns_vertical {
+    flex-grow: 2;
+    max-width: 198px;
+    width: 100%;
+    img{
+      margin-bottom: 7px;
+    }
+  }
+}
